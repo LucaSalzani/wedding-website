@@ -46,6 +46,7 @@ node_modules/font-awesome/*
 !node_modules/font-awesome/css/
 node_modules/font-awesome/css/*
 !node_modules/font-awesome/css/font-awesome.min.css
+!node_modules/font-awesome/fonts/
 
 !node_modules/waypoints/
 node_modules/waypoints/*
