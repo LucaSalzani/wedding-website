@@ -192,8 +192,8 @@ $(document).ready(function () {
 
         $('#alert-wrapper').html(alert_markup('info', '<strong>Kurz warten!</strong> Wir speichern Deine Anmeldung.'));
 
-        if (MD5($('#invite_code').val()) !== 'b0e53b10c1f55ede516b240036b88f40'
-            && MD5($('#invite_code').val()) !== '2ac7f43695eb0479d5846bb38eec59cc') {
+        if (MD5($('#invite_code').val()) !== 'c5feaf739b3e7cd105e4a579ae1d52aa' // Apero
+            && MD5($('#invite_code').val()) !== '660ef90699bc8f78fde964d1edf3193a') { // Zeremonie
             $('#alert-wrapper').html(alert_markup('danger', '<strong>Sorry!</strong> Dein Einladungscode ist nicht korrekt.'));
         } else {
             $.post('https://script.google.com/macros/s/AKfycbzmeBfnSaEmWpQVwzh8RQjWImcfbRJyUT2Fjh1YTZbJo7WHgmRN/exec', data)
