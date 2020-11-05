@@ -52,8 +52,9 @@
                             <!--<li class="hidden-sm hidden-xs"><a href="#video-bg">Glimpse of the city</a></li>-->
                         </ul>
                         <ul class="member-actions">
+                            <li><a data-toggle="modal" data-target="#iban-modal" class="login ">Flitterwochen</a></li>
                             <li><a href="#map" class="login">Location</a></li>
-                            <li><a href="#rsvp" class="btn-white btn-small">RSVP</a></li>
+                            <li><a href="#rsvp" class="btn-white btn-small">Anmelden</a></li>
                         </ul>
                     </nav>
                 </div>
@@ -77,19 +78,35 @@
         <div class="row">
             <div class="col-sm-4 hidden-xs"></div>
             <div class="col-sm-4 hidden-xs text-center"><a href="#rsvp"
-                                                           class="btn btn-accent btn-large rsvp-btn">RSVP</a></div>
+                                                           class="btn btn-accent btn-large rsvp-btn">Anmelden</a></div>
             <div class="col-sm-4 hidden-xs"></div>
         </div>
     </div>
     <div class="down-arrow floating-arrow"><a href="#invitation"><i class="fa fa-angle-down"></i></a></div>
 </section>
 
+<div id="iban-modal" class="modal fade" tabindex="-1" role="dialog">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-body">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span>&times;</span>
+                </button>
+                <h3 class="text-center section-padding">Flitterwochen</h3>
+                <p>
+                    Falls keine Idee für ein Geschenk vorhanden ist, würden wir uns riesig über einen kleinen Zustupf in die Reisekasse 
+                    für die Flitterwochen freuen: CH91 0078 1621 1853 7200 0
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+
 <section id="invitation" class="section-padding">
     <div class="container">
         <div class="row">
             <div class="col-md-12 text-center">
                 <h3>Wir werden heiraten!</h3>
-                <p>Die zivile Trauung und die Zeremonie werden am 13. August 2021 stattfinden und wir wollen euch dabei haben.</p>
+                <p>Die zivile Trauung und die Zeremonie werden am <strong>13. August 2021</strong> stattfinden und wir wollen euch dabei haben.</p>
             </div>
         </div>
     </div>
@@ -135,18 +152,33 @@
         <div class="row">
             <div class="col-md-6 col-sm-12 col-xs-12 leftcol">
                 <div class="wp1">
-                    <p><strong>Zivile Trauung 13. August</strong></p>
+                    <p><strong>13. August</strong></p>
 
-                    <h5>Standesamt Thalwil?? <span class="time">10:00 - 11:00</span></h5>
-                    <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum.</p>
+                    <h5>Apero <span class="time">14:30 - 16:30</span></h5>
+                    <p>
+                        Nach der standesamtlichen Trauung würden wir uns sehr freuen mit euch darauf anzustossen. Es wird Leckereien und kleinere Häppchen geben. 
+                        Wenn das Wetter es erlaubt, kann der Apero im Freien stattfinden.
+                    </p>
                 </div>
                 <div class="wp3">
-                    <h5>Apero <span class="time">12:00 - 15:00</span></h5>
-                    <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum.</p>
+                    <h5>Zeremonie <span class="time">16:30 - 17:30</span></h5>
+                    <p>
+                        Um unseren Tag symbolisch komplett zu machen, werden wir im engen Kreis eine kleine Zeremonie im Grünen abhalten.
+                    </p>
+                </div>
+                <div class="wp5">
+                    <h5>Essen und Party <span class="time">17:30 - open end</span></h5>
+                    <p>
+                        Für die Verpflegung stehen mehrere Streetfood-Trucks für die Gäste bereit. Bars, Dessertbüffet und ein Swimmingpool laden dazu ein, 
+                        das Ereignis noch ordentlich zu feiern.
+                    </p>
                 </div>
             </div>
             <div class="col-md-6 col-sm-12 col-xs-12 rightcol">
                 <div class="wp2">
+                    <img src="img/eng_pics/eng3.jpg" alt="" width="400"/>
+                </div>
+                <!--<div class="wp2">
                     <p><strong>Zeremonie 13. August</strong></p>
 
                     <h5>Zeremonie im Traumgarten <span class="time">15:00 - 17:00</span></h5>
@@ -159,7 +191,7 @@
                 <div class="wp6">
                     <h5>Feiert mit uns <span class="time">19:00 - Open end</span></h5>
                     <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum.</p>
-                </div>
+                </div>-->
             </div>
         </div>
         <div class="row section-padding">
@@ -182,21 +214,16 @@
                     <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span>&times;</span>
                     </button>
                     <h3 class="text-center section-padding">Ugh... dress codes?</h3>
-                    <h5>Das Brautpaar</h5>
+                    <h5>Allgemein</h5>
+                    <p><strong>Sommerlich, festlich, elegant, leicht</strong></p>
+
+                    <p><i class="fa fa-exclamation-circle" aria-hidden="true"></i> Die Braut wird blau tragen. 
+                        Daher bitten wir die Damen, sich nicht für Blautöne zu entscheiden.</p>
+                    
+                    <h5>Nur Zeremoniegäste</h5>
                     <p>
-                        Wir werden xy tragen....
-                    </p>
-                    <h5>Damen</h5>
-                    <p>
-                        <strong>Sommerlich festlich</strong>
-                        <br>
-                        Hier ein paar links als Inspiration. Folgende Farben sind der Braut vorbehalten: xy
-                    </p>
-                    <h5>Männer</h5>
-                    <p>
-                        <strong>Elegant, leicht</strong>
-                        <br>
-                        Hier ein paar links als Inspiration
+                        Wir bitten zusätzlich, alle Zeremoniegäste, etwas <span class="ceremony-color"><strong>Braunes</strong></span> zu tragen. 
+                        Da bieten sich Krawatten, Schuhe, Gürtel, Einstecktücher, Handtaschen, Hüte, Haarschmuck oder natürlich auch komplette Anzüge/Kleider an.
                     </p>
                 </div>
             </div>
@@ -225,90 +252,6 @@
 </section>
 -->
 
-<section id="eng-pics" class="section-padding">
-    <div class="container-fluid">
-        <div class="row">
-            <div class="col-md-12 text-center">
-                <h3 class="header">Verlobungsbilder</h3>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-md-2">
-                <a class="fancybox" rel="group" href="img/eng_pics/eng2.jpg">
-                    <div class="img-wrap">
-                        <div class="overlay">
-                            <i class="fa fa-search"></i>
-                        </div>
-                        <img src="img/eng_pics/eng2.jpg" alt=""/>
-                    </div>
-                </a>
-            </div>
-            <div class="col-md-2">
-                <a class="fancybox" rel="group" href="img/eng_pics/eng3.jpg">
-                    <div class="img-wrap">
-                        <div class="overlay">
-                            <i class="fa fa-search"></i>
-                        </div>
-                        <img src="img/eng_pics/eng3.jpg" alt=""/>
-                    </div>
-                </a>
-            </div>
-            <div class="col-md-2">
-                <a class="fancybox" rel="group" href="img/eng_pics/eng1.jpg">
-                    <div class="img-wrap">
-                        <div class="overlay">
-                            <i class="fa fa-search"></i>
-                        </div>
-                        <img src="img/eng_pics/eng1.jpg" alt=""/>
-                    </div>
-                </a>
-            </div>
-            <div class="col-md-2">
-                <a class="fancybox" rel="group" href="img/eng_pics/eng4.jpg">
-                    <div class="img-wrap">
-                        <div class="overlay">
-                            <i class="fa fa-search"></i>
-                        </div>
-                        <img src="img/eng_pics/eng4.jpg" alt=""/>
-                    </div>
-                </a>
-            </div>
-            <div class="col-md-2">
-                <a class="fancybox" rel="group" href="img/eng_pics/eng5.jpg">
-                    <div class="img-wrap">
-                        <div class="overlay">
-                            <i class="fa fa-search"></i>
-                        </div>
-                        <img src="img/eng_pics/eng5.jpg" alt=""/>
-                    </div>
-                </a>
-            </div>
-            <div class="col-md-2">
-                <a class="fancybox" rel="group" href="img/eng_pics/eng6.jpg">
-                    <div class="img-wrap">
-                        <div class="overlay">
-                            <i class="fa fa-search"></i>
-                        </div>
-                        <img src="img/eng_pics/eng6.jpg" alt=""/>
-                    </div>
-                </a>
-            </div>
-        </div>
-    </div>
-    <div class="container">
-        <div class="row hidden-lg hidden-md hidden-xs">
-            <div class="col-xs-12 section-border section-padding"></div>
-        </div>
-    </div>
-    <!--<div class="row">
-        <div class="col-md-12">
-            <div class="diamond floating-logo">
-                <img src="img/sketch-logo.png" alt="Sketch Logo">
-                <div class="ring"></div>
-            </div>
-        </div>
-    </div>-->
-</section>
 
 <section id="video-bg" class="hidden-sm hidden-xs">
     <div id="bgndVideo" class="player"
@@ -431,6 +374,92 @@
             </div>
         </div>
     </div>
+</section>
+
+
+<section id="eng-pics" class="section-padding">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-12 text-center">
+                <h3 class="header">Verlobungsbilder</h3>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-2">
+                <a class="fancybox" rel="group" href="img/eng_pics/eng2.jpg">
+                    <div class="img-wrap">
+                        <div class="overlay">
+                            <i class="fa fa-search"></i>
+                        </div>
+                        <img src="img/eng_pics/eng2.jpg" alt=""/>
+                    </div>
+                </a>
+            </div>
+            <div class="col-md-2">
+                <a class="fancybox" rel="group" href="img/eng_pics/eng3.jpg">
+                    <div class="img-wrap">
+                        <div class="overlay">
+                            <i class="fa fa-search"></i>
+                        </div>
+                        <img src="img/eng_pics/eng3.jpg" alt=""/>
+                    </div>
+                </a>
+            </div>
+            <div class="col-md-2">
+                <a class="fancybox" rel="group" href="img/eng_pics/eng1.jpg">
+                    <div class="img-wrap">
+                        <div class="overlay">
+                            <i class="fa fa-search"></i>
+                        </div>
+                        <img src="img/eng_pics/eng1.jpg" alt=""/>
+                    </div>
+                </a>
+            </div>
+            <div class="col-md-2">
+                <a class="fancybox" rel="group" href="img/eng_pics/eng4.jpg">
+                    <div class="img-wrap">
+                        <div class="overlay">
+                            <i class="fa fa-search"></i>
+                        </div>
+                        <img src="img/eng_pics/eng4.jpg" alt=""/>
+                    </div>
+                </a>
+            </div>
+            <div class="col-md-2">
+                <a class="fancybox" rel="group" href="img/eng_pics/eng5.jpg">
+                    <div class="img-wrap">
+                        <div class="overlay">
+                            <i class="fa fa-search"></i>
+                        </div>
+                        <img src="img/eng_pics/eng5.jpg" alt=""/>
+                    </div>
+                </a>
+            </div>
+            <div class="col-md-2">
+                <a class="fancybox" rel="group" href="img/eng_pics/eng6.jpg">
+                    <div class="img-wrap">
+                        <div class="overlay">
+                            <i class="fa fa-search"></i>
+                        </div>
+                        <img src="img/eng_pics/eng6.jpg" alt=""/>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row hidden-lg hidden-md hidden-xs">
+            <div class="col-xs-12 section-border section-padding"></div>
+        </div>
+    </div>
+    <!--<div class="row">
+        <div class="col-md-12">
+            <div class="diamond floating-logo">
+                <img src="img/sketch-logo.png" alt="Sketch Logo">
+                <div class="ring"></div>
+            </div>
+        </div>
+    </div>-->
 </section>
 
 <footer>

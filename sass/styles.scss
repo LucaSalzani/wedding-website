@@ -312,6 +312,7 @@ header {
 
     &.login {
       margin-right: 20px;
+      cursor: pointer;
     }
   }
   .logo {
@@ -370,6 +371,9 @@ header {
   bottom: 30px;
   left: 50%;
   transform: translateX(-50%);
+}
+.ceremony-color {
+  color: #8B4513;
 }
 
 /* ==========================================================================
