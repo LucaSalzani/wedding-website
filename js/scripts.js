@@ -188,27 +188,26 @@ $(document).ready(function () {
         e.preventDefault();
         var data = $(this).serialize();
 
-        $('#alert-wrapper').html(alert_markup('info', '<strong>Kurz warten!</strong> Wir speichern Deine Anmeldung.'));
+        $('#alert-wrapper').html(alert_markup('info', '<strong>Bitte kurz warten!</strong> Wir speichern Deine Anmeldung.'));
 
-        if (MD5($('#invite_code').val()) !== 'c5feaf739b3e7cd105e4a579ae1d52aa' // Apero
-            && MD5($('#invite_code').val()) !== '660ef90699bc8f78fde964d1edf3193a') { // Zeremonie
-            $('#alert-wrapper').html(alert_markup('danger', '<strong>Sorry!</strong> Dein Einladungscode ist nicht korrekt.'));
-        } else {
-            $.post('https://script.google.com/macros/s/AKfycbzmeBfnSaEmWpQVwzh8RQjWImcfbRJyUT2Fjh1YTZbJo7WHgmRN/exec', data)
-                .done(function (data) {
-                    console.log(data);
-                    if (data.result === "error") {
-                        $('#alert-wrapper').html(alert_markup('danger', data.message));
-                    } else {
-                        $('#alert-wrapper').html('');
-                        $('#rsvp-modal').modal('show');
-                    }
-                })
-                .fail(function (data) {
-                    console.log(data);
-                    $('#alert-wrapper').html(alert_markup('danger', '<strong>Sorry!</strong> Serverprobleme :('));
-                });
-        }
+        // if (MD5($('#invite_code').val()) !== 'c5feaf739b3e7cd105e4a579ae1d52aa' // Apero
+        //     && MD5($('#invite_code').val()) !== '660ef90699bc8f78fde964d1edf3193a') { // Zeremonie
+        //     $('#alert-wrapper').html(alert_markup('danger', '<strong>Sorry!</strong> Dein Einladungscode ist nicht korrekt.'));
+        $.post('https://script.google.com/macros/s/AKfycbye1Q_92eHKaw9sOOZySB7kcLVsMtnUGaBM5W8unjOSRqUbaLZsLtuSmSRNeoK8LQXPFA/exec', data)
+            .done(function (data) {
+                console.log(data);
+                if (data.result === "error") {
+                    $('#alert-wrapper').html(alert_markup('danger', data.message));
+                } else {
+                    $('#alert-wrapper').html('');
+                    $('#rsvp-modal').modal('show');
+                }
+            })
+            .fail(function (data) {
+                console.log(data);
+                $('#alert-wrapper').html(alert_markup('danger', '<strong>Sorry!</strong> Serverprobleme :('));
+            });
+        
     });
 
 });
